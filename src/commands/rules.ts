@@ -20,7 +20,7 @@ export default {
       .addFields(
         {
           name: '1️⃣ Be Respectful',
-          value: 'Treat all members with respect. No harassment, hate speech, or discrimination.',
+          value: 'Treat all members with respect. No harassment, hate speech (including but not limited to pluraphobia, homophobia, transphobia, racism), or discrimination.',
           inline: false,
         },
         {
@@ -48,6 +48,10 @@ export default {
           value: 'Do not advertise or promote without permission from staff.',
           inline: false,
         },
+        {
+          name: 'Pernament invite link',
+          value: 'https://discord.gg/RQDRzK3VBe'
+        }
       )
       .setFooter({ text: 'Violations may result in warnings, mutes, or bans.' })
       .setTimestamp();

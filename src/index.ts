@@ -4,6 +4,7 @@ import {
   REST,
   Routes,
   Collection,
+  PresenceUpdateStatus ,
 } from 'discord.js';
 import { readdirSync } from 'fs';
 import { join } from 'path';
@@ -110,12 +111,13 @@ client.on('interactionCreate', async (interaction) => {
 });
 
 // Bot ready event
-client.once('ready', () => {
+client.once('clientReady', () => {
   console.log(chalk.magentaBright('\n╔═════════════════════════════════════════════════════════╗'));
   console.log(chalk.magentaBright('║  Doughmination System Robot - UnifiedGaming Systems Ltd ║'));
   console.log(chalk.magentaBright('╚═════════════════════════════════════════════════════════╝\n'));
   console.log(chalk.green(`✓ Logged in as ${chalk.bold(client.user?.tag)}`));
   console.log(chalk.green(`✓ Bot is ready and running!\n`));
+  client.user?.setPresence({ activities: [{ name: 'UnifiedGaming Systems Ltd' }], status: PresenceUpdateStatus.Idle})
 });
 
 // Initialize bot
