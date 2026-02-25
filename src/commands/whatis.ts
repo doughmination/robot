@@ -56,9 +56,10 @@ export default {
           inline: false,
         },
         {
-          name: '❔ What is the server pernament invite?',
-          value: 'https://discord.gg/RQDRzK3VBe'
-        }
+          name: '❔ What is the server permanent invite?',
+          value: 'https://discord.gg/RQDRzK3VBe',
+          inline: false,
+        },
       )
       .setFooter({ text: 'Have more questions? Contact a staff member!' })
       .setTimestamp();
