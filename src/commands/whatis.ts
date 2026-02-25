@@ -26,7 +26,7 @@ export default {
 
     // ── Embed 1: General FAQ ───────────────────────────────────────────────
     const faqEmbed = new EmbedBuilder()
-      .setColor(0x0099FF)
+      .setColor(0x9B59B6)
       .setTitle('❓ Frequently Asked Questions')
       .setDescription('Here are answers to some commonly asked questions about our server.')
       .addFields(
@@ -56,7 +56,7 @@ export default {
           inline: false,
         },
         {
-          name: '❔ What is the server pernament invite>',
+          name: '❔ What is the server pernament invite?',
           value: 'https://discord.gg/RQDRzK3VBe'
         }
       )
@@ -65,7 +65,7 @@ export default {
 
     // ── Embed 2: Clarity on the Doughmination names ────────────────────────
     const namesEmbed = new EmbedBuilder()
-      .setColor(0x0099FF)
+      .setColor(0x9B59B6)
       .setTitle('Clarity on the Doughmination names')
       .setDescription(
         [
@@ -91,7 +91,7 @@ export default {
 
     // ── Embed 3: AI disclaimer ─────────────────────────────────────────────
     const aiEmbed = new EmbedBuilder()
-      .setColor(0x0099FF)
+      .setColor(0x9B59B6)
       .setTitle('A note on AI usage')
       .setDescription(
         'The amount of AI generated content across all Doughmination System projects amounts to **less than 10%** of total content, ' +
